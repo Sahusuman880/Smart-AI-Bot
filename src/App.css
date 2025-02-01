@@ -1,0 +1,210 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 30px 10px;
+  color: white;
+  font-size: 30px;
+}
+
+.hero {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  gap: 20px;
+  padding: 20px 10px;
+}
+
+#tag {
+  font-size: 2.5vmax;
+}
+
+.cat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.upImg,
+.genImg,
+.chatImg {
+  padding: 10px 20px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.upImg:hover,
+.genImg:hover,
+.chatImg:hover {
+  background-color: rgba(240, 248, 255, 0.164);
+}
+
+.upImg svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(27, 202, 27);
+}
+
+.genImg svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(27, 138, 202);
+}
+
+.chatImg svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(238, 13, 36);
+}
+
+.input-box {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 20px;
+  position: fixed;
+  bottom: 0;
+}
+
+#add,
+#submit {
+  width: 60px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+#add svg {
+  width: 30px;
+  height: 30px;
+}
+
+#submit svg {
+  width: 25px;
+  height: 25px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+form input {
+  max-width: 60%;
+  width: calc(70vw - 40px);
+  height: 60px;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+}
+.chatPage {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+  padding: 20px;
+}
+.user,
+.ai {
+  width: 90%;
+  padding: 20px 30px;
+  color: white;
+  background-color: rgb(11, 16, 17);
+  border: 2px solid rgba(255, 255, 255, 0.297);
+  border-radius: 20px;
+  font-size: 20px;
+}
+.popUp {
+  width: 200px;
+  height: 120px;
+  background-color: rgb(11, 16, 17);
+  position: absolute;
+  bottom: 130px;
+  left: 21%;
+  border: 2px solid rgba(255, 255, 255, 0.104);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.select-up,
+.select-gen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  gap: 5px;
+}
+
+@media (max-width: 500px) {
+  #tag {
+    font-size: 20px;
+  }
+  form input {
+    width: calc(70vw -0px);
+    font-size: 15px;
+  }
+  #add,
+  #submit {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: black;
+    color: 2hite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #add svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  #submit svg {
+    width: 20x;
+    height: 20px;
+  }
+}
